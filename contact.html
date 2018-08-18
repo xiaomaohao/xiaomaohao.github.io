@@ -1,0 +1,20 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+---
+
+<p>email: yea027@ruc.edu.cn</p>
+
+<br>
+<p>地址：国学馆402</p>
+
+<ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
